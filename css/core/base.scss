@@ -1,0 +1,104 @@
+html{
+	width: 100%;
+}
+
+body{
+	background-color: $yellow;
+	text-align: center;
+}
+
+header{
+	padding: 10px 0;
+
+	img{
+		max-width: 175px;
+	}
+}
+
+.intro{
+	p{
+		color: $black;
+	}
+
+	margin: 0 auto 25px auto;
+	width: 85%;
+}
+
+.conversation{
+	padding: 10px;
+	overflow: hidden;
+	margin: 25px auto;
+
+	.user{
+		color: $white;
+		background-color: $blue;
+		padding: 6px 7px 8px 9px;
+		border-radius: 7px;
+		float: right;
+		margin-bottom: 12px;
+		text-align: left;
+	}
+
+	.system{
+		color: $black;
+		background-color: $white;
+		padding: 6px 7px 8px 9px;
+		border-radius: 5px;
+		float: left;
+		margin-bottom: 12px;
+		text-align: left;
+	}
+}
+
+.messenger{
+
+	.messenger-form{
+		overflow: hidden;
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+
+		.textbox{
+			background-color: $black;
+			border: none;
+			border-radius: 5px;
+			color: $white;
+			padding: 10px 16px 10px 12px;
+			resize: none;
+			margin: 0;
+		}
+
+		.send{
+			background-color: $black;
+			border: none;
+			border-radius: 5px;
+			color: $white;
+			cursor: pointer;
+			margin-left: 10px;
+			height: 50px;
+			width: 50px;
+
+			.arrow{
+				width: 25px;
+			}
+		}
+	}
+}
+
+footer{
+	overflow: hidden;
+	width: 100%;
+	padding: 25px 0;
+	background-color: $black;
+	bottom: 0;
+	position: fixed;
+
+	a{
+		color: $white;
+		font-weight: $light;
+		opacity: 0.7;
+		text-decoration: none;
+		padding-bottom: 2px;
+		border-bottom: 2px solid $blue;
+	}
+}

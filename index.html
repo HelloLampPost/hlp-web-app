@@ -7,7 +7,7 @@
 
 	<!-- Meta Info -->
 	<title>Hello Lamp Post</title>
-	<meta name="author" content="James Hanks">
+	<meta name="author" content="Hello Lamp Post">
 	<meta name="description" content="The playful, city-wide system that lets you talk to street furniture.">
 	<meta name="keywords" content="city, playful, SMS, Facebook Messenger, interactive, fun, street furniture, text">
 	<meta name="distribution" content="Global">
@@ -36,9 +36,40 @@
 	<link rel="apple-touch-icon" href="images/touch-icon.png">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-
-	<!-- Scripts -->
+	<link rel="stylesheet" href="css/output.css">
 </head>
+
+<body>
+	<header>
+		<img src="images/logo.svg">
+	</header>
+
+	<section class="intro">
+		<p>Find a street object with a code on it and send it a message using the text box below, in this format:
+			“Hello + Object + #Code”<br><br>You’ll soon get a reply!
+		</p>
+	</section>
+
+	<section class="conversation">
+		<div class="user">
+			<p>Hello Lamp Post #1234</p>
+		</div>
+		<div class="system">
+			<p>Hello, good afternoon! Tell me - what's your favourite food?</p>
+		</div>
+	</section>
+
+	<section class="messenger">
+		<form class="messenger-form" action="" method="post">
+			<textarea class="textbox" placeholder="Type your message here."></textarea>
+			<button type="submit" class="send">
+				<img class="arrow" src="images/send.svg">
+			</button>
+		</form>
+	</section>
+
+	<footer>
+		<a href="http://www.hellolamppost.co.uk">© Hello Lamp Post 2018</a>
+	</footer>
+</body>
 </html>

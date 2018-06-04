@@ -1,0 +1,132 @@
+/* ----- Reset ----- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("fonts/Gotham-Book.woff2") format("woff2"), url("fonts/Gotham-Book.woff") format("woff"); }
+@font-face {
+  font-family: 'Gotham Medium';
+  src: url("fonts/Gotham-Medium.woff2") format("woff2"), url("fonts/Gotham-Medium.woff") format("woff"); }
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("fonts/Gotham-Bold.woff2") format("woff2"), url("fonts/Gotham-Bold.woff") format("woff"); }
+body {
+  font-family: "Gotham", sans-serif, sans-serif;
+  line-height: 1.4; }
+
+p {
+  font-family: 'Gotham Medium'; }
+
+.textbox {
+  font-family: 'Gotham Book'; }
+
+html {
+  width: 100%; }
+
+body {
+  background-color: #FFD100;
+  text-align: center; }
+
+header {
+  padding: 10px 0; }
+  header img {
+    max-width: 175px; }
+
+.intro {
+  margin: 0 auto 25px auto;
+  width: 85%; }
+  .intro p {
+    color: #2A2A2A; }
+
+.conversation {
+  padding: 10px;
+  overflow: hidden;
+  margin: 25px auto; }
+  .conversation .user {
+    color: #FFFFFF;
+    background-color: #44BFEF;
+    padding: 6px 7px 8px 9px;
+    border-radius: 7px;
+    float: right;
+    margin-bottom: 12px;
+    text-align: left; }
+  .conversation .system {
+    color: #2A2A2A;
+    background-color: #FFFFFF;
+    padding: 6px 7px 8px 9px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom: 12px;
+    text-align: left; }
+
+.messenger .messenger-form {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .messenger .messenger-form .textbox {
+    background-color: #2A2A2A;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 10px 16px 10px 12px;
+    resize: none;
+    margin: 0; }
+  .messenger .messenger-form .send {
+    background-color: #2A2A2A;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px; }
+    .messenger .messenger-form .send .arrow {
+      width: 25px; }
+
+footer {
+  overflow: hidden;
+  width: 100%;
+  padding: 25px 0;
+  background-color: #2A2A2A;
+  bottom: 0;
+  position: fixed; }
+  footer a {
+    color: #FFFFFF;
+    font-weight: 100;
+    opacity: 0.7;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #44BFEF; }
+
+/*# sourceMappingURL=output.css.map */
