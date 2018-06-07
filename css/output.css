@@ -1,11 +1,12 @@
 /* ----- Reset ----- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, button, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  background: none; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -128,16 +129,15 @@ header {
       margin: 0;
       width: 100%; }
     .messenger .messenger-form .send {
-      background-color: #2A2A2A;
-      border: none;
-      border-radius: 5px;
-      color: #FFFFFF;
-      cursor: pointer;
       margin-left: 10px;
-      height: 50px;
-      width: 60px; }
-      .messenger .messenger-form .send .arrow {
-        width: 25px; }
+      cursor: pointer; }
+      .messenger .messenger-form .send .send-button-circle {
+        fill: #2A2A2A; }
+      .messenger .messenger-form .send .send-button-arrow {
+        fill: #FFD100;
+        transition: all 0.3s ease-in-out; }
+    .messenger .messenger-form .send:hover .send-button-arrow {
+      fill: #44BFEF; }
 
 footer {
   overflow: hidden;
@@ -150,6 +150,9 @@ footer {
     opacity: 0.7;
     text-decoration: none;
     padding-bottom: 2px;
-    border-bottom: 2px solid #44BFEF; }
+    border-bottom: 2px solid #44BFEF;
+    transition: all 0.3s ease-in-out; }
+  footer a:hover {
+    opacity: 1; }
 
 /*# sourceMappingURL=output.css.map */

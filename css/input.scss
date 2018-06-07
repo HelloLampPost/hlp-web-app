@@ -14,6 +14,9 @@ $mobile: 480px;
 $tablet: 768px;
 $desktop: 1024px;
 
+//Transitions
+$hover: all 0.3s ease-in-out;
+
 @import 'core/reset';
 @import 'core/typography';
 @import 'core/base';
