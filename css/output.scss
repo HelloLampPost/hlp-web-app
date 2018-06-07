@@ -158,17 +158,17 @@ header {
       .chat-history .system .system-message {
         margin-bottom: 12px; } }
 
-.chat-message {
+.messenger {
   padding: 10px;
   margin: 0 auto;
   font-size: 1.1em;
   max-width: 720px; }
-  .chat-message .messenger-form {
+  .messenger .messenger-form {
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center; }
-    .chat-message .messenger-form #message-to-send {
+    .messenger .messenger-form .textbox {
       background-color: #2A2A2A;
       border: none;
       border-radius: 5px;
@@ -177,18 +177,18 @@ header {
       resize: none;
       margin: 0;
       width: 100%; }
-    .chat-message .messenger-form .send {
+    .messenger .messenger-form .send {
       margin-left: 10px;
       cursor: pointer; }
-      .chat-message .messenger-form .send .send-button-circle {
+      .messenger .messenger-form .send .send-button-circle {
         fill: #2A2A2A; }
-      .chat-message .messenger-form .send .send-button-arrow {
+      .messenger .messenger-form .send .send-button-arrow {
         fill: #FFD100;
         transition: all 0.3s ease-in-out; }
-    .chat-message .messenger-form .send:hover .send-button-arrow {
+    .messenger .messenger-form .send:hover .send-button-arrow {
       fill: #44BFEF; }
   @media (min-width: 0px) and (max-width: 480px) {
-    .chat-message {
+    .messenger {
       font-size: 0.95em; } }
 
 footer {
@@ -221,4 +221,4 @@ footer {
 @media (min-width: $desktop) {}
 */
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=output.scss.map */

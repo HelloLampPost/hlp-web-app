@@ -20,3 +20,13 @@ $hover: all 0.3s ease-in-out;
 @import 'core/reset';
 @import 'core/typography';
 @import 'core/base';
+
+/*
+@media (min-width: 0px) and (max-width: $mobile) {}
+
+@media (min-width: $mobile) and (max-width: $tablet) {}
+
+@media (min-width: $tablet) and (max-width: $desktop) {}
+
+@media (min-width: $desktop) {}
+*/
