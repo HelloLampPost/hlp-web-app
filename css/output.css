@@ -80,14 +80,21 @@ header {
     max-width: 175px; }
 
 .intro {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1.5em;
+  max-width: 600px; }
   .intro p {
     color: #2A2A2A; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    .intro {
+      font-size: 1.1em; } }
 
 .conversation {
   padding: 10px;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 1.1em;
+  max-width: 720px; }
   .conversation .user {
     clear: both; }
     .conversation .user .user-message {
@@ -97,11 +104,10 @@ header {
       border-radius: 7px;
       text-align: left;
       float: right;
-      margin: 12px 0;
-      max-width: 80%; }
+      max-width: 80%;
+      margin-bottom: 20px; }
   .conversation .system {
-    clear: both;
-    margin-bottom: 12px; }
+    clear: both; }
     .conversation .system .system-message {
       color: #2A2A2A;
       background-color: #FFFFFF;
@@ -109,11 +115,54 @@ header {
       border-radius: 5px;
       float: left;
       text-align: left;
-      max-width: 80%; }
+      max-width: 80%;
+      margin-bottom: 20px; }
+      .conversation .system .system-message #typing-1 {
+        animation-name: typing-1;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; }
+@keyframes typing-1 {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 0.25; } }
+      .conversation .system .system-message #typing-2 {
+        animation-name: typing-2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; }
+@keyframes typing-2 {
+  0% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 0.25; } }
+      .conversation .system .system-message #typing-3 {
+        animation-name: typing-3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite; }
+@keyframes typing-3 {
+  0% {
+    opacity: 0.25; }
+  50% {
+    opacity: 0.25; }
+  100% {
+    opacity: 0.5; } }
+  @media (min-width: 0px) and (max-width: 480px) {
+    .conversation {
+      font-size: 0.95em; }
+      .conversation .user .user-message {
+        margin-bottom: 12px; }
+      .conversation .system .system-message {
+        margin-bottom: 12px; } }
 
 .messenger {
   padding: 10px;
-  margin: 0 0 25px 0; }
+  margin: 0 auto;
+  font-size: 1.1em;
+  max-width: 720px; }
   .messenger .messenger-form {
     overflow: hidden;
     display: flex;
@@ -138,13 +187,17 @@ header {
         transition: all 0.3s ease-in-out; }
     .messenger .messenger-form .send:hover .send-button-arrow {
       fill: #44BFEF; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    .messenger {
+      font-size: 0.95em; } }
 
 footer {
   overflow: hidden;
   width: 100%;
   padding: 25px 0;
   background-color: #2A2A2A;
-  bottom: 0; }
+  bottom: 0;
+  font-size: 1.1em; }
   footer a {
     color: #FFFFFF;
     opacity: 0.7;
@@ -154,5 +207,8 @@ footer {
     transition: all 0.3s ease-in-out; }
   footer a:hover {
     opacity: 1; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    footer {
+      font-size: 0.95em; } }
 
 /*# sourceMappingURL=output.css.map */
