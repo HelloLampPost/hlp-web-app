@@ -36,7 +36,7 @@
 	<link rel="apple-touch-icon" href="images/touch-icon.png">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/output.css">
+	<link rel="stylesheet prefetch" href="css/output.css">
 </head>
 
 <body>
@@ -52,59 +52,20 @@
 
 	<section class="chat-history">
 		<ul>
-
-			<div class="user">
-				<div class="user-message">
-					<p>Hello Lamp Post #1234</p>
-				</div>
-			</div>
-
-			<div class="system">
-				<div class="system-message">
-					<p>Hello, good afternoon! Tell me - what's your favourite food?</p>
-				</div>
-			</div>
-
-			<div class="user">
-				<div class="user-message">
-					<p>I like falafel wraps. In particular, ones that can be purchased at a fine establishment known as 'The King'.</p>
-				</div>
-			</div>
-
-			<div class="system">
-				<div class="system-message">
-					<p>Great! The last person I spoke to said: "Anything that's free." Do you enjoy spending your time around these parts of town?</p>
-				</div>
-			</div>
-
-			<div class="user">
-				<div class="user-message">
-					<p>I spend the majority of my life here, so I think I have to!</p>
-				</div>
-			</div>
-
-			<li class="system">
-				<div class="system-message typing">
-					<svg width="10" height="10"><circle id="typing-1" cx="5" cy="5" r="5"/></svg>
-					<svg width="10" height="10"><circle id="typing-2" cx="5" cy="5" r="5"/></svg>
-					<svg width="10" height="10"><circle id="typing-3" cx="5" cy="5" r="5"/></svg>
-				</div>
-			</li>
-
 		</ul>
 	</section>
 
-	<section class="chat-message clearfix">
-		<form class="messenger-form">
-			<textarea name="message-to-send" id="message-to-send" placeholder="Type your message here."></textarea>
+	<div class="chat-message clearfix">
+		<div class="messenger-form">
+			<textarea autofocus name="message-to-send" id="message-to-send" placeholder="Type your message here."></textarea>
 			<button class="send">
 				<svg width="50" height="50">
 					<circle class="send-button-circle" cx="25" cy="25" r="25"/>
 					<polygon class="send-button-arrow" points="13,13.8 13,22.2 31.7,25 13,27.8 13,36.2 41,25"/>
 				</svg>
 			</button>
-		</form>
-	</section>
+		</div>
+	</div>
 
 	<footer>
 		<a href="http://www.hellolamppost.co.uk">© Hello Lamp Post 2018</a>
@@ -112,32 +73,41 @@
 
 	<script id="message-template" type="text/x-handlebars-template">
 		<li class="clearfix">
-			<div class="message-data align-right">
-				<span class="message-data-time" >{{time}}</span> &nbsp; &nbsp;
-				<span class="message-data-name" >You</span> <i class="fa fa-circle me"></i>
-			</div>
-			<div class="message other-message float-right">
-				{{messageOutput}}
+			<div class="user">
+				<div class="message-data">
+					<p class="message-data-time">{{time}}</p>
+				</div>
+				<div class="user-message message other-message">
+					<p>{{messageOutput}}</p>
+				</div>
 			</div>
 		</li>
 	</script>
 
 	<script id="typing-template" type="text/x-handlebars-template">
 		<li id="typing">
-			<i class="fa fa-circle online"></i>
-			<i class="fa fa-circle online" style="color: #AED2A6"></i>
-			<i class="fa fa-circle online" style="color:#DAE9DA"></i>
+			<div class="system">
+				<div class="message-data">
+					<p class="message-data-time">{{time}}</p>
+				</div>
+				<div class="system-message typing">
+					<svg width="10" height="10"><circle id="typing-1" cx="5" cy="5" r="5"/></svg>
+					<svg width="10" height="10"><circle id="typing-2" cx="5" cy="5" r="5"/></svg>
+					<svg width="10" height="10"><circle id="typing-3" cx="5" cy="5" r="5"/></svg>
+				</div>
+			</div>
 		</li>
 	</script>
 
 	<script id="message-response-template" type="text/x-handlebars-template">
 		<li>
-			<div class="message-data">
-				<span class="message-data-name"><i class="fa fa-circle online"></i> Hello India</span>
-				<span class="message-data-time">{{time}}</span>
-			</div>
-			<div class="message my-message">
-				{{response}}
+			<div class="system">
+				<div class="message-data">
+					<p class="message-data-time">{{time}}</p>
+				</div>
+				<div class="system-message">
+					<p>{{response}}</p>
+				</div>
 			</div>
 		</li>
 	</script>

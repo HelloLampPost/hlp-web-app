@@ -28,9 +28,13 @@ header{
 .chat-history{
 	padding: 11px;
 	overflow: hidden;
-	margin: 0 auto;
+	margin: 25px auto;
 	font-size: 1.1em;
 	max-width: 720px;
+
+	.message-data{
+		color: $black;
+	}
 
 	.user{
 		clear: both;
@@ -44,6 +48,10 @@ header{
 			float: right;
 			max-width: 80%;
 			margin-bottom: 20px;
+		}
+
+		.message-data{
+			float: right;
 		}
 	}
 
@@ -114,6 +122,10 @@ header{
 				}
 			}
 		}
+
+		.message-data{
+			float: left;
+		}
 	}
 
 	@media (min-width: 0px) and (max-width: $mobile) {
@@ -135,9 +147,9 @@ header{
 
 .chat-message{
 	padding: 10px;
-	margin: 0 auto;
 	font-size: 1.1em;
 	max-width: 720px;
+	margin: 0 auto;
 
 	.messenger-form{
 		overflow: hidden;
@@ -189,6 +201,7 @@ footer{
 	background-color: $black;
 	bottom: 0;
 	font-size: 1.1em;
+	position: fixed;
 
 	a{
 		color: $white;

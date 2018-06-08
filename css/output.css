@@ -65,7 +65,7 @@ p {
 .intro {
   font-weight: 700; }
 
-.textbox {
+#message-to-send {
   font-family: 'Gotham Book'; }
 
 footer a {
@@ -93,9 +93,11 @@ header {
 .chat-history {
   padding: 11px;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 25px auto;
   font-size: 1.1em;
   max-width: 720px; }
+  .chat-history .message-data {
+    color: #2A2A2A; }
   .chat-history .user {
     clear: both; }
     .chat-history .user .user-message {
@@ -107,6 +109,8 @@ header {
       float: right;
       max-width: 80%;
       margin-bottom: 20px; }
+    .chat-history .user .message-data {
+      float: right; }
   .chat-history .system {
     clear: both; }
     .chat-history .system .system-message {
@@ -151,6 +155,8 @@ header {
     opacity: 0.25; }
   100% {
     opacity: 0.5; } }
+    .chat-history .system .message-data {
+      float: left; }
   @media (min-width: 0px) and (max-width: 480px) {
     .chat-history {
       font-size: 0.95em; }
@@ -161,9 +167,9 @@ header {
 
 .chat-message {
   padding: 10px;
-  margin: 0 auto;
   font-size: 1.1em;
-  max-width: 720px; }
+  max-width: 720px;
+  margin: 0 auto; }
   .chat-message .messenger-form {
     overflow: hidden;
     display: flex;
@@ -198,7 +204,8 @@ footer {
   padding: 25px 0;
   background-color: #2A2A2A;
   bottom: 0;
-  font-size: 1.1em; }
+  font-size: 1.1em;
+  position: fixed; }
   footer a {
     color: #FFFFFF;
     opacity: 0.7;

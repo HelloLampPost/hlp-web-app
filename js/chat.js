@@ -58,7 +58,7 @@
      * @param  exp       Expiration - creation defaults to 30 days
      */
 
-     function createCookie(key, value, exp) {
+    function createCookie(key, value, exp) {
       var date = new Date();
       date.setTime(date.getTime() + (exp * 24 * 60 * 60 * 1000));
       var expires = "; expires=" + date.toGMTString();
@@ -70,7 +70,7 @@
      * @param  key       The key or identifier for the store
      */
 
-     function readCookie(key) {
+    function readCookie(key) {
       var nameEQ = key + "=";
       var ca = document.cookie.split(';');
       for (var i = 0, max = ca.length; i < max; i++) {
@@ -190,7 +190,8 @@
       };
       var data = JSON.stringify(d);
       var request = new XMLHttpRequest();
-      request.open('POST', 'http://0.0.0.0:3000/telephony/handle_sms', true);
+      request.open('POST', 'https://hello-lamp-post-api.herokuapp.com/telephony/handle_sms', true);
+//      request.open('POST', 'http://0.0.0.0:3000/telephony/handle_sms', true);
       request.setRequestHeader('Content-Type', 'application/json');
       request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
