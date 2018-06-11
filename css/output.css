@@ -205,7 +205,7 @@ footer {
   background-color: #2A2A2A;
   bottom: 0;
   font-size: 1.1em;
-  position: fixed; }
+  margin-top: 50px; }
   footer a {
     color: #FFFFFF;
     opacity: 0.7;
