@@ -88,7 +88,7 @@ html, body {
       padding: 0 20px; } }
 
 header {
-  padding: 10px 0; }
+  padding: 25px 0; }
   header img {
     max-width: 175px; }
   @media (min-width: 0px) and (max-width: 480px) {
@@ -104,10 +104,10 @@ header {
     font-weight: 700; }
   @media (min-width: 480px) and (max-width: 768px) {
     .intro {
-      font-size: 0.95em; } }
+      font-size: 1.1em; } }
   @media (min-width: 0px) and (max-width: 480px) {
     .intro {
-      font-size: 0.95em; } }
+      font-size: 1em; } }
 
 .chat-history {
   padding: 11px;
