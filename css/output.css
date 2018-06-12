@@ -91,6 +91,9 @@ header {
   padding: 10px 0; }
   header img {
     max-width: 175px; }
+  @media (min-width: 0px) and (max-width: 480px) {
+    header img {
+      max-width: 125px; } }
 
 .intro {
   margin: 0 auto;
@@ -98,9 +101,12 @@ header {
   max-width: 600px; }
   .intro p {
     color: #2A2A2A; }
-  @media (min-width: 0px) and (max-width: 480px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     .intro {
       font-size: 1.1em; } }
+  @media (min-width: 0px) and (max-width: 480px) {
+    .intro {
+      font-size: 0.95em; } }
 
 .chat-history {
   padding: 11px;

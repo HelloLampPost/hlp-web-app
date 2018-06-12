@@ -23,6 +23,12 @@ header{
 	img{
 		max-width: 175px;
 	}
+
+	@media (min-width: 0px) and (max-width: $mobile) {
+		img{
+			max-width: 125px;
+		}
+	}
 }
 
 .intro{
@@ -34,8 +40,12 @@ header{
 		color: $black;
 	}
 
-	@media (min-width: 0px) and (max-width: $mobile) {
+	@media (min-width: $mobile) and (max-width: $tablet) {
 		font-size: 1.1em;
+	}
+
+	@media (min-width: 0px) and (max-width: $mobile) {
+		font-size: 0.95em;
 	}
 }
 
