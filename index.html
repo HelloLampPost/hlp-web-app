@@ -40,31 +40,36 @@
 </head>
 
 <body>
-	<header>
-		<img src="images/logo.svg">
-	</header>
+	<div class="wrapper">
+		<header>
+			<a href="http://www.hellolamppost.co.uk">
+				<img src="images/logo.svg">
+			</a>
+		</header>
 
-	<section class="intro">
-		<p>Find a street object with a code on it and send it a message using the text box below, in this format:
-			“Hello + Object + #Code”<br><br>You’ll soon get a reply!
-		</p>
-	</section>
+		<section class="intro">
+			<p>Find a street object with a code on it and send it a message using the text box below, in this format:
+				“Hello + Object + #Code”<br><br>You’ll soon get a reply!
+			</p>
+		</section>
 
-	<section class="chat-history">
-		<ul>
-		</ul>
-	</section>
+		<section class="chat-history">
+			<ul>
+			</ul>
+		</section>
 
-	<div class="chat-message clearfix">
-		<div class="messenger-form">
-			<textarea autofocus name="message-to-send" id="message-to-send" placeholder="Type your message here."></textarea>
-			<button class="send">
-				<svg width="50" height="50">
-					<circle class="send-button-circle" cx="25" cy="25" r="25"/>
-					<polygon class="send-button-arrow" points="13,13.8 13,22.2 31.7,25 13,27.8 13,36.2 41,25"/>
-				</svg>
-			</button>
+		<div class="chat-message clearfix">
+			<div class="messenger-form">
+				<textarea autofocus name="message-to-send" id="message-to-send" placeholder="Type your message here."></textarea>
+				<button class="send">
+					<svg width="50" height="50">
+						<circle class="send-button-circle" cx="25" cy="25" r="25"/>
+						<polygon class="send-button-arrow" points="13,13.8 13,22.2 31.7,25 13,27.8 13,36.2 41,25"/>
+					</svg>
+				</button>
+			</div>
 		</div>
+
 	</div>
 
 	<footer>
