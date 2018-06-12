@@ -38,6 +38,7 @@ header{
 
 	p{
 		color: $black;
+		font-weight: $bold;
 	}
 
 	@media (min-width: $mobile) and (max-width: $tablet) {
